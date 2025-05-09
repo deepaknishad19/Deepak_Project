@@ -1,0 +1,75 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("bgimg.jpeg");
+    background: #d1d1d1;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 500px;
+    min-height: 100px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    box-shadow: 0 0 50px rgba(0, 0, 0 ,0.8);
+    border-radius: 10px;
+}
+.container h2{
+    background-color: rgba(0, 0, 0 ,0.8) ;
+    text-align: center;
+    text-decoration: dashed;
+    padding: 10px;
+    margin: 5px;
+    color: #fff;
+
+} 
+.container form{
+    width: 100%;
+    height: auto ;
+    margin: 20px auto;
+
+}
+.container form .form-floating {
+    margin: 10px ;
+}
+
+.btn {
+    background: rgb(43, 36, 35);
+    color: #fff;
+    border: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 10px;
+    margin: 10px;
+    display: block;
+    margin: 15px auto;
+    width: 30%; 
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.btn:hover{
+    color: aqua;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0 ,0.8);
+}
+
+.container form p{
+    text-align: center;
+    margin: 10px;
+
+}
+.container form p a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 5000;
+}
+@media(max-width:200px){
+    .container{
+        grid-template-rows: auto;
+    }
+}
